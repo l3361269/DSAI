@@ -13,14 +13,14 @@
 > * loading data並選出有興趣的features進行prosessing
 > * 測試資料的時序平穩性
 > * 建立模型來預測時序資料(以LSTM及ARIMA來比較它們的表現)
->> * LSTM model
->>> * 將名目型features進行dummy variable
->>> * 全部features做正規化(MinMaxScaler)
->>> * 將data分成Training set跟testing set
->>> * 建立LSTM模型，並以testing set測試預測結果
->> * ARIMA model
->>> * 將不平穩資料做平穩處理：將"Peak Load(MW)"取log後做一階差分
->>> * 將data分成Training data跟testing data
->>> * 建立ARIMA模型並進行預測(預測出的數值是log且一階差分的數值)
->>> * 將ARIMA模型預測的結果恢復
+>>    * LSTM model
+>>>     * 將名目型features進行dummy variable
+>>>     * 全部features做正規化(MinMaxScaler)
+>>>     * 將data分成Training set跟testing set
+>>>     * 建立LSTM模型，並以testing set測試預測結果
+>>    * ARIMA model
+>>>     * 將不平穩資料做平穩處理：將"Peak Load(MW)"取log後做一階差分
+>>>     * 將data分成Training data跟testing data
+>>>     * 建立ARIMA模型並進行預測(預測出的數值是log且一階差分的數值)
+>>>     * 將ARIMA模型預測的結果恢復
 > * 比較LSTM及ARIMA模型表現，選擇表現較好的ARIMA模型來進行最終預測
